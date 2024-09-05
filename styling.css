@@ -1,0 +1,31 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex:1;
+    width:100%;
+    gap:5px;
+    padding:70px;
+    border-radius: 10px;
+}
+.container div{
+    background: lightblue;
+    width:5rem;
+    height:10rem;
+    flex-grow: 1;
+    transition: all 0.5s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container div:hover{
+    flex-grow: 5;
+
+}
+.container div:nth-child(odd){
+    background: rgb(218, 34, 89);
+}
